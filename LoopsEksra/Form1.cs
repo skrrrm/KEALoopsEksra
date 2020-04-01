@@ -45,7 +45,15 @@ namespace LoopsEksra
         /// </summary>
         private void button3_Click(object sender, EventArgs e)
         {
+            // Variables
+            string stars = "";
 
+            listBoxResult.Items.Clear(); // Clears listbox
+            for (int i = 1; i <= 50; i++) // loop adds an asterix [ * ] to the string and prints the string
+            {
+                stars += "*";
+                listBoxResult.Items.Add(stars); // add stars to listbox items
+            }
         }
 
         /// <summary>
@@ -53,7 +61,11 @@ namespace LoopsEksra
         /// </summary>
         private void button4_Click(object sender, EventArgs e)
         {
-
+            listBoxResult.Items.Clear(); // Clears listbox
+            for (int i = 100; i > -1; i--) // loop prints every number from 100-0
+            {
+                listBoxResult.Items.Add(i); // add i to listbox items
+            }
         }
 
         /// <summary>
