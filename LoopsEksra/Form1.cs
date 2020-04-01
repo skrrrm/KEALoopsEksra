@@ -85,7 +85,11 @@ namespace LoopsEksra
         /// </summary>
         private void button6_Click(object sender, EventArgs e)
         {
-
+            listBoxResult.Items.Clear(); // Clears listbox
+            for (int i = 1; i < 15; i++) // loop prints pi with more and more decimals - max 15 decimals
+            {
+                listBoxResult.Items.Add(Math.Round(Math.PI, i)); // add pi rounded to listbox items with x 
+            }
         }
 
         /// <summary>
