@@ -21,7 +21,8 @@ namespace LoopsEksra
         /// </summary>
         private void button1_Click(object sender, EventArgs e)
         {
-            for (int i = 1; i <= 10; i++)
+            listBoxResult.Items.Clear(); // Clears listbox
+            for (int i = 1; i <= 1000; i++) // loop prints every number from 1-1000
             {
                 listBoxResult.Items.Add(i); // add i to listbox items
             }
@@ -32,7 +33,8 @@ namespace LoopsEksra
         /// </summary>
         private void button2_Click(object sender, EventArgs e)
         {
-            for (int i = 1; i <= 10; i=+2)
+            listBoxResult.Items.Clear(); // Clears listbox
+            for (int i = 2; i <= 1000; i += 2) // loop prints every other number from 2-1000
             {
                 listBoxResult.Items.Add(i); // add i to listbox items
             }
