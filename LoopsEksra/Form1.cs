@@ -73,7 +73,11 @@ namespace LoopsEksra
         /// </summary>
         private void button5_Click(object sender, EventArgs e)
         {
-
+            listBoxResult.Items.Clear(); // Clears listbox
+            for (int i = 30; i <= 40; i++) // loop prints every number from 30-40
+            {
+                listBoxResult.Items.Add(i); // add i to listbox items
+            }
         }
 
         /// <summary>
