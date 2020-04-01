@@ -97,6 +97,23 @@ namespace LoopsEksra
         /// </summary>
         private void button7_Click(object sender, EventArgs e)
         {
+            listBoxResult.Items.Clear(); // Clears listbox
+
+            // Variables
+            string startSpace = "                                                    "; // space sets the first star - also used in loop
+            string space = "";
+            string stars = startSpace + "*";
+
+            listBoxResult.Items.Add(stars); // adding the very first asterisk
+
+            for (int i = 0; i < startSpace.Length; i++) // runs for the string length of [startSpace]
+            {
+                startSpace = startSpace.Remove(0, 1); // removes one char from the beginning of the string
+                space += "  "; // adds spaces to [space]
+                stars = startSpace + "*" + space + "*"; // adds asterisks to [stars], adds the altered [startSpace], adds the altered [space]
+
+                listBoxResult.Items.Add(stars); // adds [stars] to listbox
+            }
 
         }
     }
